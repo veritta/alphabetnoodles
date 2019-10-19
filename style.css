@@ -1,0 +1,102 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  background: #f7f6f2;
+  color: #707070;
+  font-family: 'Be Vietnam', serif;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 7vw;
+}
+
+.page-title {
+  color: #eb3d3d;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.page-about {
+  font-style: italic;
+}
+
+.page-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.poem-block {
+  background: #ffffff;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  margin: 20px;
+  padding: 10px 30px 50px;
+  text-align: center;
+  width: 600px;
+}
+
+.poem-header {
+  padding-bottom: 30px;
+}
+
+.poem-title {
+  background: #eb3d3d;
+  color: #ffffff;
+  margin: 0 0 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+time {
+  color: #b8b8b8;
+}
+
+.poem-lightbox-overlay {
+  background-color: rgba(0,0,0,0.85);
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.poem-lightbox-overlay.open {
+  display: block;
+}
+
+.poem-lightbox {
+  background: #ffffff;
+  display: none;
+  height: 700px;
+  left: calc(50% - 300px);
+  padding: 30px 60px;
+  position: absolute;
+  text-align: center;
+  top: calc(50% - 300px);
+  width: 600px;
+}
+
+.poem-lightbox.open {
+  display: block;
+}
+
+.close-button {
+  position: absolute;
+  bottom: 30px;
+  cursor: pointer;
+  right: 30px;
+  font-size: 30px;
+}
+
+.poem-text {
+  text-align: left;
+}
